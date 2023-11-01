@@ -18,6 +18,6 @@ if(!isset($_SESSION["username"]))
 <h1>THIS IS USER HOME PAGE</h1><?php echo $_SESSION["username"] ?>
 
 <a href="logout.php">Logout</a>
-
+<a href="menu.php">Menu</a>
 </body>
 </html>

@@ -1,4 +1,5 @@
 <?php
+session_start();
 $host="localhost";
 $user="root";
 $password="";
@@ -41,6 +42,15 @@ if($num>0){
     $sundinner = mysqli_fetch_assoc($result);
 }
 
+if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSION['user_type'])){
+    $username = $_SESSION['username'];
+    $password = $_SESSION['password'];
+    $user_type = $_SESSION['user_type'];
+}else {
+    // Redirect to the login page if session variables are not set
+    header("Location: login.php");
+    exit();
+}
 
 ?>
 
@@ -59,6 +69,7 @@ if($num>0){
 </head>
 <body>
     <div class="table">
+
         <h1 style="text-align:center" >Mess Menu</h1>
         <br>
     <table class="table align-middle table-bordered border table-success table-striped border-success border-5" >
@@ -68,6 +79,13 @@ if($num>0){
       <th scope="col">Breakfast</th>
       <th scope="col">Lunch</th>
       <th scope="col">Dinner</th>
+      <!-- <th scope="col"><?php 
+        if($user_type==="admin"){
+            echo "Edit";
+            
+        }
+      ?></th> -->
+      
     </tr>
   </thead>
   <tbody>
@@ -76,6 +94,9 @@ if($num>0){
       <td><?php echo $monbreakfast['Food'];?></td>
       <td><?php echo $monlunch['Food'];?></td>
       <td><?php echo $mondinner['Food'];?></td>
+      <?php if($user_type==="admin"){
+          echo "<td> edit </td>"
+      }  ?>
     </tr>
     <tr>
       <th scope="row">Tuesday</th>

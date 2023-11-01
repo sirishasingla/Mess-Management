@@ -33,6 +33,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	{	
 
 		$_SESSION["username"]=$username;
+        $_SESSION["password"]=$password;
+        $_SESSION["user_type"]=$row["usertype"];
 
 		header("location:./userhome.php");
 	}
@@ -41,6 +43,8 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
 	{
 
 		$_SESSION["username"]=$username;
+        $_SESSION["password"]=$password;
+        $_SESSION["user_type"]=$row["usertype"];
 		
 		header("location:./adminhome.php");
 	}
