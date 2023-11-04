@@ -73,11 +73,10 @@ if(!isset($_SESSION["username"]))
   </div>
 </nav>
 <div class="container">
-  <h1>Food Wastage Benefits No One</h1>
-  <p>1.3 billion tons of food wasted per year.</p>
+  <h2>Food Wastage Benefits No One</h2>
   <blockquote>
-    <p>Each day, 25,000 people, including more than 10,000 children, die from hunger and related causes. </p>
-    <footer>From United Nations website</footer>
+    <p>In a world where hunger continues to afflict millions, it's vital to address food loss and waste. Each day, an alarming 25,000 individuals, including over 10,000 children, succumb to hunger and its related consequences. Shockingly, about 13 percent of the world's food production is lost between harvest and retail, with an additional 17 percent wasted in households, food service, and retail. This squanders vital resources such as water, land, and energy, while also contributing to greenhouse gas emissions and climate change in landfills. Food loss and waste harm food security and affordability. To establish resilient, sustainable food systems, a coordinated approach to minimize waste is critical. Embracing innovative technologies and practices is our path forward. With just seven years to reach Sustainable Development Goal 12, there's an urgent call to action to combat food loss and waste.</p>
+    <footer>from United Nations website</footer>
   </blockquote>
 </div>
 <!-- <div class="jumbotron">
@@ -91,23 +90,43 @@ if(!isset($_SESSION["username"]))
   <div class="row">
     <div class="col-sm-4">
       <div class="panel panel-primary">
-        <div class="panel-heading">Ways to Prevent Food Wastage in Mess</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">---</div>
+        <div class="panel-heading">Ways to Reduce Food Wastage in Mess</div>
+        <div class="panel-body"><button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo"></button><img src="https://i.pinimg.com/736x/7f/6f/07/7f6f074c12ac81cc9f2dbcb937513396.jpg" class="img-responsive" style="width:100%" alt="Image"></button>
+          <div id="demo" class="collapse">
+            <ol>
+              <li>Portion Control: Take only what you can eat. Smaller portions reduce plate waste.</li> 
+              <li>Scrape and Save: Scraping your plate into designated bins collects organic waste for composting.</li>
+              <li>Plan Tomorrow's Plate: Indicate your absence or special food requests for the next day. Help us prepare the right amount. </li>
+              <li>Speak Your Taste: Give regular feedback on food quality and menu items. Your input makes our meals better.</li>
+            </ol>
+          </div></div>
+        <div class="panel-footer">
+          <div class="container">
+            <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">View Ways</button>
+            <!-- <div id="demo" class="collapse">
+              Lorem ipsum dolor sit amet,<br> consectetur adipisicing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+              quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            </div> -->
+          </div>
+        </div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
         <div class="panel-heading">NOTICE BOARD</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+          <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+        </div>
         <div class="panel-footer">---</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-success">
         <div class="panel-heading">CHAT</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
-        <div class="panel-footer">---</div>
+        <div class="panel-body">
+          <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+        </div>        <div class="panel-footer">---</div>
       </div>
     </div>
   </div>
@@ -118,21 +137,27 @@ if(!isset($_SESSION["username"]))
     <div class="col-sm-4">
       <div class="panel panel-primary">
         <div class="panel-heading">MENU</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+          <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+        </div>
         <div class="panel-footer">---</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">SPECIAL REQUESTS</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+          <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+        </div>
         <div class="panel-footer">---</div>
       </div>
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
         <div class="panel-heading">LOST 'n' FOUND</div>
-        <div class="panel-body"><img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"></div>
+        <div class="panel-body">
+          <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+        </div>
         <div class="panel-footer">---</div>
       </div>
     </div>
