@@ -91,12 +91,17 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSI
   <tbody>
     <tr>
       <th scope="row">Monday</th>
-      <td><?php echo $monbreakfast['Food'];?></td>
+        <td><?php 
+              echo $monbreakfast['Food'];
+              if($user_type==="admin"){ 
+                echo "<br>";
+                echo "<button> edit </button>";
+              }
+            ?>
+        </td>
       <td><?php echo $monlunch['Food'];?></td>
       <td><?php echo $mondinner['Food'];?></td>
-      <?php if($user_type==="admin"){
-          echo "<td> edit </td>"
-      }  ?>
+        <?php   ?>
     </tr>
     <tr>
       <th scope="row">Tuesday</th>
