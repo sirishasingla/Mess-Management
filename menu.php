@@ -1,5 +1,9 @@
 <?php
 session_start();
+if(!isset($_SESSION["username"]))
+{
+	header("location:login.php");
+}
 $host="localhost";
 $user="root";
 $password="";
@@ -68,6 +72,33 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSI
     <title>Mess Menu</title>
 </head>
 <body>
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+  <div class="container-fluid">
+    <a class="navbar-brand" >Menu</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <?php
+          if($user_type==="admin"){ 
+            echo "<a class='nav-link active' aria-current='page' href='adminhome.php'>Home</a>";
+          }
+          else{
+            echo "<a class='nav-link active' aria-current='page' href='userhome.php'>Home</a>";
+          }
+          ?>
+  
+        </li>
+      
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+          <li class="nav-item">
+            <a class="nav-link active" href="logout.php"> Logout</a>
+          </li>
+      </ul>
+  </div>
+</nav>
     <div class="table">
 
         <h1 style="text-align:center" >Mess Menu</h1>
@@ -93,10 +124,10 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSI
       <th scope="row">Monday</th>
         <td><?php 
               echo $monbreakfast['Food'];
-              if($user_type==="admin"){ 
-                echo "<br>";
-                echo "<button> edit </button>";
-              }
+              // if($user_type==="admin"){ 
+              //   echo "<br>";
+              //   echo "<button> edit </button>";
+              // }
             ?>
         </td>
       <td><?php echo $monlunch['Food'];?></td>

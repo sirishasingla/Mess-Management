@@ -58,16 +58,16 @@ if(!isset($_SESSION["username"]))
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Menu</a></li>
+        <li><a href="menu.php">Menu</a></li>
         <li><a href="#">Notice</a></li>
         <li><a href="#">Special Requests</a></li>
-        <li><a href="#">Lost and Found</a></li>
+        <li><a href="lostFound.php">Lost and Found</a></li>
         <li><a href="#">Chat</a></li>
         <li><a href="#">Feedback</a></li>
         <li><a href="#">Contact</a></li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+        <li><a href="logout.php"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
       </ul>
     </div>
   </div>
