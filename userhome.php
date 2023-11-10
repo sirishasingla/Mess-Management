@@ -1,11 +1,22 @@
 <?php
 session_start();
+$host="localhost";
+$user="root";
+$password="";
+$db="database1";
 
 
 if(!isset($_SESSION["username"]))
 {
 	header("location:login.php");
 }
+$data=mysqli_connect($host,$user,$password,$db);
+
+if($data===false)
+{
+	die("connection error");
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -59,8 +70,8 @@ if(!isset($_SESSION["username"]))
       <ul class="nav navbar-nav">
         <li class="active"><a href="#">Home</a></li>
         <li><a href="menu.php">Menu</a></li>
-        <li><a href="#">Notice</a></li>
-        <li><a href="#">Special Requests</a></li>
+        <li><a href="#notice">Notice</a></li>
+        <li><a href="userRequest.php">Special Requests</a></li>
         <li><a href="lostFound.php">Lost and Found</a></li>
         <li><a href="#">Chat</a></li>
         <li><a href="#">Feedback</a></li>
@@ -114,9 +125,33 @@ if(!isset($_SESSION["username"]))
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-danger">
-        <div class="panel-heading">NOTICE BOARD</div>
+        <div class="panel-heading" id="notice">NOTICE BOARD</div>
         <div class="panel-body">
           <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col">Sno</th>
+                <th scope="col">Announcement</th>
+                <th scope="col">Date/Time</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php
+              $sql = "SELECT * FROM `announcements` ORDER BY sno DESC";
+              $result = mysqli_query($data, $sql);
+              $sno = 0;
+              while($row = mysqli_fetch_assoc($result)){
+               $sno = $sno+1;
+               echo " <tr>
+               <th scope='row'>".$sno."</th>
+               <td>".$row['message']."</td>
+               <td>".$row['tstamp']."</td>
+               </tr>";
+              }
+              ?>
+            </tbody>
+          </table>
         </div>
         <div class="panel-footer">---</div>
       </div>
@@ -154,7 +189,7 @@ if(!isset($_SESSION["username"]))
     </div>
     <div class="col-sm-4"> 
       <div class="panel panel-primary">
-        <div class="panel-heading">LOST 'n' FOUND</div>
+        <div class="panel-heading" >LOST 'n' FOUND</div>
         <div class="panel-body">
           <!-- <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image"> -->
         </div>

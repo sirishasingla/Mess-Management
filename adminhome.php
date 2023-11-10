@@ -17,9 +17,16 @@ if(!isset($_SESSION["username"]))
 <body>
 
 <h1>THIS IS ADMIN HOME PAGE</h1><?php echo $_SESSION["username"] ?>
-
+<br>
 <a href="logout.php">Logout</a>
+<br>
 <a href="menuAdmin.php">Update Menu</a>
-<a href="menu.php">Display Menu</a>
+<br>
+<a href="menuDisplayAdmin.php">Display Menu</a>
+<br>
+<a href="lostFoundAdmin.php">Lost/Found</a>
+<br>
+<a href="announcementAdmin.php">Announcements</a>
+<br>
 </body>
 </html>
