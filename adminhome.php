@@ -30,5 +30,7 @@ if(!isset($_SESSION["username"]))
 <br>
 <a href="requestAdmin.php">Special Request</a>
 <br>
+<a href="availabilityAdmin.php">Unavailability</a>
+<br>
 </body>
 </html>
