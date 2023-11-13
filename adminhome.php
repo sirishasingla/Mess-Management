@@ -28,5 +28,7 @@ if(!isset($_SESSION["username"]))
 <br>
 <a href="announcementAdmin.php">Announcements</a>
 <br>
+<a href="requestAdmin.php">Special Request</a>
+<br>
 </body>
 </html>

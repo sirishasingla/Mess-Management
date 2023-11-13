@@ -72,6 +72,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSI
     <title>Mess Menu</title>
 </head>
 <body>
+  
 <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
   <div class="container-fluid">
     <a class="navbar-brand" >Menu</a>

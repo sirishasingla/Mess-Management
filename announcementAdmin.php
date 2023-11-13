@@ -73,6 +73,12 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         /* p {text-align: center;} */
         div {text-align: center;}
         </style>
+    <script>
+        // let table = new DataTable('#myTable');
+        $(document).ready(function () {
+            $('#myTable').DataTable();
+        });
+    </script>
     <title>Announcements</title>
 </head>
 <body>
@@ -113,7 +119,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <!-- <div class="container"> -->
 <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark border-bottom border-body" data-bs-theme="dark">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#"><?php echo $_SESSION["username"] ?></a>
+    <a class="navbar-brand" href="#">admin</a>
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -161,12 +167,13 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         </div>
         <div class="p-2 flex-fill">
             <h1>All Announcements</h1>
-            <table class="table">
+            <table class="table" id="myTable">
                 <thead>
                     <tr>
                         <th scope="col">Sno</th>
                         <th scope="col">Announcement</th>
                         <th scope="col">Date/Time</th>
+                        <th scope="col">Actions</th>
                     </tr>
                 </thead>
                 <tbody>
