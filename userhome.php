@@ -73,6 +73,7 @@ if($data===false)
         <li><a href="#notice">Notice</a></li>
         <li><a href="userRequest.php">Special Requests</a></li>
         <li><a href="lostFound.php">Lost and Found</a></li>
+        <li><a href="availabilityUser.php">Availability</a></li>
         <li><a href="#">Chat</a></li>
         <li><a href="#">Feedback</a></li>
         <li><a href="#">Contact</a></li>
