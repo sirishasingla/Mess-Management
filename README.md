@@ -3,34 +3,34 @@
 The Mess Management System is a web-based application designed to streamline the management of a mess in an educational institution. It provides separate interfaces for two types of users: admin (mess manager) and students. The system includes features such as announcement management, menu display/edit, lost and found section, unavailability reporting, special requests, a feedback form, a chat system, and contact details. Users can log in and out of the system to access their respective functionalities.
 
 ## Technologies Used
-HTML
-CSS
-Bootstrap
-JavaScript
-PHP
+HTML  
+CSS  
+Bootstrap  
+JavaScript  
+PHP  
 MySQL
 ## Features
 ### 1. User Types
 Admin (Mess Manager): Responsible for overall mess management and system administration.
 Students: Have access to features like menu display, lost and found, unavailability reporting, special requests, feedback, and chat.
 ### 2. Functionality
-#### Announcement Section: Admin can post announcements visible to all students.
+Announcement Section: Admin can post announcements visible to all students.
 
-#### Display/Edit Menu: Admin can manage the mess menu, and students can view the menu.
+Display/Edit Menu: Admin can manage the mess menu, and students can view the menu.
 
-#### Lost/Found Section: Students can report lost or found items.
+Lost/Found Section: Students can report lost or found items.
 
-#### Unavailability Reporting: Students can report their unavailability for meals on specific days.
+Unavailability Reporting: Students can report their unavailability for meals on specific days.
 
-#### Special Request: Students can make special requests related to their meals.
+Special Request: Students can make special requests related to their meals.
 
-#### Feedback Form: A form for students to provide feedback on the mess services.
+Feedback Form: A form for students to provide feedback on the mess services.
 
-#### Chat System: An interactive chat system allowing communication between admin and students.
+Chat System: An interactive chat system allowing communication between admin and students.
 
-#### Contact Details: Display of contact details for mess-related queries.
+Contact Details: Display of contact details for mess-related queries.
 
-#### Login/Logout System: Secure user authentication for both admin and students.
+Login/Logout System: Secure user authentication for both admin and students.
 
 ## Installation
 Clone the repository: git clone https://github.com/sirishasingla/mess-management.git
