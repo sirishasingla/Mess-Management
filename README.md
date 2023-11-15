@@ -11,7 +11,7 @@ PHP
 MySQL
 ## Features
 ### 1. User Types
-Admin (Mess Manager): Responsible for overall mess management and system administration.
+Admin (Mess Manager): Responsible for overall mess management and system administration.  
 Students: Have access to features like menu display, lost and found, unavailability reporting, special requests, feedback, and chat.
 ### 2. Functionality
 Announcement Section: Admin can post announcements visible to all students.
@@ -33,14 +33,14 @@ Contact Details: Display of contact details for mess-related queries.
 Login/Logout System: Secure user authentication for both admin and students.
 
 ## Installation
-Clone the repository: git clone https://github.com/sirishasingla/mess-management.git
-Configure the database by importing the provided SQL file.
-Update the database connection details in config.php.
-Deploy the project on a PHP-enabled server.
-Usage
-Access the system through the web browser.
-Log in as admin or student.
-Explore and use the various features based on your user type.
+Clone the repository: git clone https://github.com/sirishasingla/mess-management.git  
+Configure the database by importing the provided SQL file.  
+Update the database connection details in config.php.  
+Deploy the project on a PHP-enabled server.  
+## Usage  
+Access the system through the web browser.  
+Log in as admin or student.  
+Explore and use the various features based on your user type.  
 
 
 
