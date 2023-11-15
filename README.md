@@ -1,6 +1,5 @@
-# Mess-Management
-Mess Management System
-Overview
+# Mess-Management System
+## Overview
 The Mess Management System is a web-based application designed to streamline the management of a mess in an educational institution. It provides separate interfaces for two types of users: admin (mess manager) and students. The system includes features such as announcement management, menu display/edit, lost and found section, unavailability reporting, special requests, a feedback form, a chat system, and contact details. Users can log in and out of the system to access their respective functionalities.
 
 Technologies Used
