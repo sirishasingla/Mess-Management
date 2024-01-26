@@ -138,7 +138,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
           <?php
-            echo "<a class='nav-link active' aria-current='page' href='adminhome.php'>Home</a>";         
+            echo "<a class='nav-link active' aria-current='page' href='dashboard.php'>Home</a>";         
           ?>  
         </li>      
       </ul>
@@ -219,7 +219,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
         <td>".$row['description']."</td>
         <td>".$row['location']."</td>
         <td>".$row['tstamp']."</td>
-        <td><button class='edit btn btn-sm btn-primary' id=".$row['sno'].">Edit</button> <button class='delete btn btn-sm btn-primary' id=d".$row['sno'].">Delete</button></td>
+        <td><button class='edit btn btn-sm btn-success' id=".$row['sno'].">Edit</button> <button class='delete btn btn-sm btn-danger' id=d".$row['sno'].">Delete</button></td>
       </tr>";
     }
     

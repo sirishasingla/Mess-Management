@@ -82,7 +82,7 @@ if(isset($_SESSION['username']) && isset($_SESSION['password']) && isset($_SESSI
         <li class="nav-item">
           <?php
           
-            echo "<a class='nav-link active' aria-current='page' href='adminhome.php'>Home</a>";
+            echo "<a class='nav-link active' aria-current='page' href='dashboard.php'>Home</a>";
           
           ?>
   

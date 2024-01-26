@@ -46,7 +46,7 @@ if($data===false)
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="adminhome.php">Home</a>
+          <a class="nav-link" href="dashboard.php">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">

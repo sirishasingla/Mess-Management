@@ -46,7 +46,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST")
         $_SESSION["password"]=$password;
         $_SESSION["user_type"]=$row["usertype"];
 		
-		header("location:./adminhome.php");
+		header("location:./dashboard.php");
 	}
 
 	else

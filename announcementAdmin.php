@@ -126,7 +126,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" aria-current="page" href="adminhome.php">Home</a>
+          <a class="nav-link" aria-current="page" href="dashboard.php">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -187,7 +187,7 @@ if($_SERVER["REQUEST_METHOD"]=="POST"){
                             <th scope='row'>".$sno."</th>
                             <td>".$row['message']."</td>
                             <td>".$row['tstamp']."</td>
-                            <td><button class='edit btn btn-sm btn-primary' id=".$row['sno'].">Edit</button> <button class='delete btn btn-sm btn-primary' id=d".$row['sno'].">Delete</button></td>
+                            <td><button class='edit btn btn-sm btn-success' id=".$row['sno'].">Edit</button> <button class='delete btn btn-sm btn-danger' id=d".$row['sno'].">Delete</button></td>
                             </tr>";
                         }
                     ?>  

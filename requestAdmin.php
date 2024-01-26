@@ -72,7 +72,7 @@ if (isset($_GET['sno']) && isset($_GET['status'])) {
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
         <li class="nav-item">
-          <a class="nav-link" href="adminhome.php">Home</a>
+          <a class="nav-link" href="dashboard.php">Home</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
@@ -94,7 +94,7 @@ if (isset($_GET['sno']) && isset($_GET['status'])) {
       <th scope="col">Username</th>
       <th scope="col">Roll Number</th>
       <th scope="col">Request</th>
-      <th scope="col">Date of request</th>
+      <th scope="col">Requested Date</th>
       <th scope="col">Status</th>
       <th scope="col">Actions</th>
     </tr>
